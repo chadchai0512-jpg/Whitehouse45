@@ -8,11 +8,17 @@
 
   <meta
     name="description"
-    content="White House 45 ร้านทำผมราชพฤกษ์ นนทบุรี ทำสีผม ไฮไลท์ แก้สีผม พรางผมขาว ตัดผม ออกแบบทรงผม และ Personal Colour"
+    content="White House 45 ร้านทำผมราชพฤกษ์ นนทบุรี เชี่ยวชาญทำสีผม ไฮไลท์ แก้สี พรางผมขาว ตัดและออกแบบทรงผม พร้อม Personal Colour Consultation"
   >
 
-  <style>
+  <meta
+    name="keywords"
+    content="White House 45, ร้านทำผมราชพฤกษ์, ร้านทำสีผมราชพฤกษ์, ร้านทำผมนนทบุรี, ไฮไลท์ผมราชพฤกษ์, แก้สีผม, พรางผมขาว, Personal Colour"
+  >
 
+  <meta name="robots" content="index, follow">
+
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -30,9 +36,11 @@
       line-height: 1.7;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+    img {
+      max-width: 100%;
+    }
+
+    /* HEADER */
 
     header {
       position: sticky;
@@ -43,26 +51,33 @@
       justify-content: space-between;
       align-items: center;
 
-      padding: 20px 7%;
+      padding: 10px 7%;
 
-      background: rgba(255,255,255,0.96);
+      background: rgba(255,255,255,0.97);
       border-bottom: 1px solid #eeeeee;
     }
 
-    .logo {
-      font-family: Georgia, serif;
-      font-size: 24px;
-      font-weight: bold;
-      letter-spacing: 3px;
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #111111;
+    }
+
+    .brand img {
+      width: 105px;
+      height: 62px;
+      object-fit: cover;
+      object-position: center;
     }
 
     nav a {
-      margin-left: 28px;
+      margin-left: 26px;
 
       color: #111111;
       text-decoration: none;
 
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 1px;
     }
 
@@ -71,14 +86,10 @@
     }
 
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
       min-height: 88vh;
-
-      position: relative;
 
       display: flex;
       align-items: center;
@@ -91,8 +102,8 @@
 
       background:
         linear-gradient(
-          rgba(0,0,0,0.28),
-          rgba(0,0,0,0.42)
+          rgba(0,0,0,0.26),
+          rgba(0,0,0,0.43)
         ),
         url("images/hero.jpg") center/cover no-repeat;
     }
@@ -102,14 +113,14 @@
     }
 
     .hero-small {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
 
       font-size: 12px;
       letter-spacing: 5px;
     }
 
     .hero h1 {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
 
       font-family: Georgia, serif;
       font-size: clamp(42px, 7vw, 90px);
@@ -120,7 +131,7 @@
     .hero p {
       margin-bottom: 32px;
 
-      font-size: 16px;
+      font-size: 15px;
       letter-spacing: 2px;
     }
 
@@ -134,7 +145,7 @@
     .hero-button {
       display: inline-block;
 
-      padding: 13px 28px;
+      padding: 13px 27px;
 
       border: 1px solid #ffffff;
 
@@ -158,16 +169,14 @@
     }
 
 
-    /* =========================
-       GENERAL SECTION
-    ========================= */
+    /* GENERAL */
 
     section {
       padding: 90px 7%;
     }
 
     .section-title {
-      margin-bottom: 50px;
+      margin-bottom: 48px;
       text-align: center;
     }
 
@@ -187,9 +196,7 @@
     }
 
 
-    /* =========================
-       ABOUT
-    ========================= */
+    /* ABOUT */
 
     .about {
       max-width: 850px;
@@ -204,9 +211,7 @@
     }
 
 
-    /* =========================
-       PERSONAL COLOUR
-    ========================= */
+    /* PERSONAL COLOUR */
 
     .personal-colour {
       background: #123d31;
@@ -235,7 +240,7 @@
     }
 
     .personal-colour p {
-      color: rgba(255,255,255,0.85);
+      color: rgba(255,255,255,0.88);
       font-size: 15px;
     }
 
@@ -252,9 +257,7 @@
     }
 
 
-    /* =========================
-       SERVICES
-    ========================= */
+    /* SERVICES */
 
     .services {
       background: #f7f7f5;
@@ -294,9 +297,7 @@
     }
 
 
-    /* =========================
-       EXPERIENCE
-    ========================= */
+    /* EXPERIENCE */
 
     .experience {
       max-width: 1050px;
@@ -311,7 +312,7 @@
 
     .experience img {
       width: 100%;
-      height: 550px;
+      height: 520px;
 
       object-fit: cover;
     }
@@ -337,9 +338,47 @@
     }
 
 
-    /* =========================
-       GALLERY
-    ========================= */
+    /* COMPETITION */
+
+    .competition-section {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .competition-section .section-title span {
+      color: #aaaaaa;
+    }
+
+    .competition-text {
+      max-width: 760px;
+      margin: -20px auto 38px;
+
+      text-align: center;
+
+      color: #cccccc;
+      font-size: 14px;
+    }
+
+    .competition-grid {
+      max-width: 1150px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .competition-grid img {
+      width: 100%;
+      height: 440px;
+
+      object-fit: cover;
+
+      display: block;
+    }
+
+
+    /* GALLERY */
 
     .gallery {
       max-width: 1200px;
@@ -356,7 +395,6 @@
       height: 460px;
 
       display: block;
-
       object-fit: cover;
 
       transition: 0.3s;
@@ -367,9 +405,55 @@
     }
 
 
-    /* =========================
-       SALON
-    ========================= */
+    /* PRICE */
+
+    .price-section {
+      background: #f7f7f5;
+    }
+
+    .price-wrap {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .price-wrap img {
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+
+      display: block;
+      margin: auto;
+
+      border: 1px solid #eeeeee;
+    }
+
+    .price-note {
+      max-width: 680px;
+      margin: 24px auto 0;
+
+      color: #666666;
+      font-size: 13px;
+    }
+
+    .price-contact {
+      display: inline-block;
+
+      margin-top: 20px;
+      padding: 11px 24px;
+
+      background: #123d31;
+      border: 1px solid #123d31;
+
+      color: #ffffff;
+      text-decoration: none;
+
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+
+    /* SALON */
 
     .salon-section {
       background: #111111;
@@ -398,16 +482,64 @@
     }
 
 
-    /* =========================
-       CONTACT
-    ========================= */
+    /* HOURS / MAP */
+
+    .hours-box {
+      max-width: 760px;
+      margin: auto;
+
+      padding: 44px 28px;
+
+      background: #f7f7f5;
+
+      text-align: center;
+    }
+
+    .hours-box span {
+      color: #777777;
+
+      font-size: 11px;
+      letter-spacing: 4px;
+    }
+
+    .hours-box h2 {
+      margin: 10px 0 16px;
+
+      font-family: Georgia, serif;
+      font-size: 34px;
+      font-weight: normal;
+    }
+
+    .hours-box p {
+      color: #555555;
+      font-size: 14px;
+    }
+
+    .maps-button {
+      display: inline-block;
+
+      margin-top: 24px;
+      padding: 12px 24px;
+
+      background: #123d31;
+      border: 1px solid #123d31;
+
+      color: #ffffff;
+      text-decoration: none;
+
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+
+    /* CONTACT */
 
     .visit {
       text-align: center;
     }
 
     .visit h2 {
-      margin-bottom: 25px;
+      margin-bottom: 22px;
 
       font-family: Georgia, serif;
       font-size: 36px;
@@ -466,9 +598,7 @@
     }
 
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       padding: 42px 20px;
@@ -482,26 +612,29 @@
       letter-spacing: 2px;
     }
 
-    footer strong {
-      color: #ffffff;
+    .footer-logo {
+      width: 115px;
+      height: 78px;
 
-      font-family: Georgia, serif;
-      font-size: 17px;
+      object-fit: cover;
+
+      margin-bottom: 18px;
+
+      filter: invert(1);
     }
 
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 768px) {
 
       header {
-        padding: 17px 5%;
+        padding: 7px 5%;
       }
 
-      .logo {
-        font-size: 17px;
+      .brand img {
+        width: 85px;
+        height: 52px;
       }
 
       nav {
@@ -526,7 +659,7 @@
       }
 
       .hero-button {
-        width: 250px;
+        width: 255px;
       }
 
       section {
@@ -552,6 +685,15 @@
 
       .experience img {
         height: 420px;
+      }
+
+      .competition-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .competition-grid img {
+        height: auto;
+        max-height: 520px;
       }
 
       .gallery {
@@ -590,54 +732,38 @@
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
-  <div class="logo">
-    WHITE HOUSE 45
-  </div>
+  <a class="brand" href="#top">
+    <img
+      src="images/logo.jpg"
+      alt="White House 45 Hair Salon logo"
+    >
+  </a>
 
   <nav>
-
-    <a href="#about">
-      ABOUT
-    </a>
-
-    <a href="#services">
-      SERVICES
-    </a>
-
-    <a href="#gallery">
-      OUR WORK
-    </a>
-
-    <a href="#salon">
-      SALON
-    </a>
-
-    <a href="#contact">
-      CONTACT
-    </a>
-
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#gallery">OUR WORK</a>
+    <a href="#price">PRICE</a>
+    <a href="#salon">SALON</a>
+    <a href="#contact">CONTACT</a>
   </nav>
 
 </header>
 
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="top">
 
   <div class="hero-content">
 
     <div class="hero-small">
-      HAIR SALON · RATCHAPHRUEK
+      HAIR SALON · RATCHAPHRUEK · NONTHABURI
     </div>
 
     <h1>
@@ -674,22 +800,13 @@
 
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
   <div class="section-title">
-
-    <span>
-      WELCOME TO
-    </span>
-
-    <h2>
-      White House 45
-    </h2>
-
+    <span>WELCOME TO</span>
+    <h2>White House 45</h2>
   </div>
 
   <div class="about">
@@ -697,10 +814,10 @@
     <p>
       White House 45 ร้านทำผมย่านราชพฤกษ์ นนทบุรี
       ให้บริการทำสีผม ไฮไลท์ แก้สีผม พรางผมขาว
-      ตัดผม ออกแบบทรงผม ยืดผม ทรีทเม้นท์
-      และบริการด้านความงาม
-      พร้อมให้คำแนะนำและออกแบบลุคให้เหมาะกับลูกค้าแต่ละคน
-      โดยช่างที่มีประสบการณ์ในสายงานมากกว่า 10 ปี
+      ตัดและออกแบบทรงผม ยืดผม และทรีทเม้นท์บำรุงผม
+      พร้อมให้คำแนะนำสีผมและลุคที่เหมาะกับลูกค้าแต่ละคน
+      รวมถึง Personal Colour Consultation
+      โดยทีมช่างที่มีประสบการณ์ในสายงานมากกว่า 10 ปี
     </p>
 
   </div>
@@ -709,9 +826,7 @@
 
 
 
-<!-- =========================
-     PERSONAL COLOUR
-========================= -->
+<!-- PERSONAL COLOUR -->
 
 <section class="personal-colour">
 
@@ -726,14 +841,14 @@
     </h2>
 
     <p>
-      เพราะสีผมที่สวยไม่จำเป็นต้องเหมือนกันสำหรับทุกคน
-      เราช่วยแนะนำโทนสีที่เหมาะกับสีผิว บุคลิก
-      และภาพรวมของแต่ละบุคคล
-      เพื่อช่วยให้การเลือกสีผมเหมาะกับคุณมากยิ่งขึ้น
+      เพราะสีผมที่เหมาะกับแต่ละคนแตกต่างกัน
+      White House 45 ให้คำแนะนำโทนสีโดยพิจารณาจากสีผิว
+      บุคลิก และภาพรวมของลูกค้า
+      เพื่อช่วยให้เลือกสีผมได้เหมาะกับตัวเองมากขึ้น
     </p>
 
     <div class="personal-free">
-      PERSONAL COLOUR CONSULTATION FOR OUR CLIENTS
+      PERSONAL COLOUR CONSULTATION
     </div>
 
   </div>
@@ -742,9 +857,7 @@
 
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section
   class="services"
@@ -767,119 +880,48 @@
   <div class="service-grid">
 
     <div class="service">
-
-      <h3>
-        Hair Colour
-      </h3>
-
-      <p>
-        ทำสีและออกแบบโทนสีผมให้เหมาะกับแต่ละบุคคล
-      </p>
-
+      <h3>Hair Colour</h3>
+      <p>ออกแบบโทนสีผมให้เหมาะกับลุคและสไตล์ของแต่ละบุคคล</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Highlight
-      </h3>
-
-      <p>
-        เพิ่มมิติให้เส้นผมด้วยเทคนิคไฮไลท์
-      </p>
-
+      <h3>Highlight</h3>
+      <p>เพิ่มมิติให้เส้นผมด้วยเทคนิคไฮไลท์ที่เหมาะกับลูกค้า</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Colour Correction
-      </h3>
-
-      <p>
-        แก้สีและปรับโทนสีผมเพื่อให้ได้ผลลัพธ์ที่ลงตัวมากขึ้น
-      </p>
-
+      <h3>Colour Correction</h3>
+      <p>แก้ไขและปรับโทนสีผมเพื่อให้ได้ผลลัพธ์ที่ลงตัวมากขึ้น</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Grey Blending
-      </h3>
-
-      <p>
-        ออกแบบลายเส้นและสีเพื่อช่วยพรางผมขาวอย่างเป็นธรรมชาติ
-      </p>
-
+      <h3>Grey Blending</h3>
+      <p>ออกแบบลายเส้นเพื่อช่วยพรางผมขาวอย่างเป็นธรรมชาติ</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Haircut & Design
-      </h3>
-
-      <p>
-        ตัดและออกแบบทรงผมให้เหมาะกับรูปหน้าและสไตล์
-      </p>
-
+      <h3>Haircut & Design</h3>
+      <p>ตัดและออกแบบทรงผมให้เหมาะกับรูปหน้าและสไตล์</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Hair Treatment
-      </h3>
-
-      <p>
-        ดูแลและบำรุงเส้นผมเพื่อเพิ่มความนุ่มและเงางาม
-      </p>
-
+      <h3>Hair Treatment</h3>
+      <p>ดูแลและบำรุงเส้นผมเพื่อเพิ่มความนุ่มและเงางาม</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Straightening
-      </h3>
-
-      <p>
-        บริการยืดและดูแลรูปทรงของเส้นผม
-      </p>
-
+      <h3>Straightening</h3>
+      <p>บริการยืดผมพร้อมดูแลรูปทรงและสภาพเส้นผม</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Personal Colour
-      </h3>
-
-      <p>
-        แนะนำโทนสีผมที่เหมาะกับสีผิวและภาพรวมของแต่ละคน
-      </p>
-
+      <h3>Personal Colour</h3>
+      <p>แนะนำโทนสีผมให้เหมาะกับสีผิวและภาพรวมของแต่ละคน</p>
     </div>
 
-
     <div class="service">
-
-      <h3>
-        Nail Service
-      </h3>
-
-      <p>
-        บริการทำเล็บภายใน White House 45
-      </p>
-
+      <h3>Consultation</h3>
+      <p>ปรึกษาสภาพเส้นผม สีผม และแนวทางก่อนเริ่มบริการ</p>
     </div>
 
   </div>
@@ -888,17 +930,15 @@
 
 
 
-<!-- =========================
-     EXPERIENCE
-========================= -->
+<!-- EXPERIENCE -->
 
 <section>
 
   <div class="experience">
 
     <img
-      src="images/salon-02.jpg"
-      alt="White House 45 professional hairstylist"
+      src="images/hair-03.jpg"
+      alt="ผลงานช่าง White House 45 ร้านทำผมราชพฤกษ์"
       loading="lazy"
     >
 
@@ -917,7 +957,7 @@
         เราให้ความสำคัญกับการวิเคราะห์เส้นผม
         การเลือกเทคนิค และการออกแบบลุคให้เหมาะกับลูกค้าแต่ละคน
         ด้วยประสบการณ์ในสายงานมากกว่า 10 ปี
-        ตั้งแต่งานสี ไฮไลท์ แก้สี
+        ตั้งแต่งานสี ไฮไลท์ แก้สี พรางผมขาว
         ไปจนถึงการออกแบบทรงผม
       </p>
 
@@ -929,9 +969,56 @@
 
 
 
-<!-- =========================
-     OUR WORK
-========================= -->
+<!-- COMPETITION -->
+
+<section class="competition-section">
+
+  <div class="section-title">
+
+    <span>
+      PROFESSIONAL JOURNEY
+    </span>
+
+    <h2>
+      Competition Experience
+    </h2>
+
+  </div>
+
+  <p class="competition-text">
+    ประสบการณ์ในสายอาชีพไม่ได้หยุดอยู่เพียงงานภายในร้าน
+    ทีมช่างยังมีประสบการณ์ในการเข้าร่วมกิจกรรมและการแข่งขันด้าน Hair Design
+    ซึ่งเป็นอีกส่วนหนึ่งของการพัฒนาทักษะและมุมมองด้านงานผมอย่างต่อเนื่อง
+  </p>
+
+
+  <div class="competition-grid">
+
+    <img
+      src="images/competition-01.jpg"
+      alt="White House 45 professional hair competition experience"
+      loading="lazy"
+    >
+
+    <img
+      src="images/competition-02.jpg"
+      alt="ประสบการณ์การแข่งขันทำผม White House 45"
+      loading="lazy"
+    >
+
+    <img
+      src="images/competition-03.jpg"
+      alt="ช่าง White House 45 ในงานการแข่งขันด้านเส้นผม"
+      loading="lazy"
+    >
+
+  </div>
+
+</section>
+
+
+
+<!-- OUR WORK -->
 
 <section id="gallery">
 
@@ -958,13 +1045,13 @@
 
     <img
       src="images/highlight-01.jpg"
-      alt="ผลงานไฮไลท์ White House 45"
+      alt="ผลงานไฮไลท์ร้านทำผม White House 45"
       loading="lazy"
     >
 
     <img
       src="images/color-01.jpg"
-      alt="ผลงานทำสีผม White House 45"
+      alt="ผลงานทำสีผมราชพฤกษ์ White House 45"
       loading="lazy"
     >
 
@@ -976,7 +1063,7 @@
 
     <img
       src="images/highlight-02.jpg"
-      alt="ผลงานไฮไลท์ราชพฤกษ์ White House 45"
+      alt="ไฮไลท์ผม White House 45 ราชพฤกษ์"
       loading="lazy"
     >
 
@@ -1000,7 +1087,7 @@
 
     <img
       src="images/hair-03.jpg"
-      alt="ผลงานทำผม White House 45"
+      alt="ผลงานทำผม White House 45 นนทบุรี"
       loading="lazy"
     >
 
@@ -1022,9 +1109,55 @@
 
 
 
-<!-- =========================
-     SALON
-========================= -->
+<!-- PRICE -->
+
+<section
+  class="price-section"
+  id="price"
+
+
+  <div class="section-title">
+
+    <span>
+      SERVICE PRICE
+    </span>
+
+    <h2>
+      Price List
+    </h2>
+
+  </div>
+
+  <div class="price-wrap">
+
+    <img
+      src="images/price-list.jpg"
+      alt="ราคาบริการ White House 45 ร้านทำผมราชพฤกษ์"
+      loading="lazy"
+    >
+
+    <p class="price-note">
+      ราคาและรายละเอียดบริการอาจแตกต่างตามความยาว
+      ความหนา สภาพเส้นผม และงานที่ต้องการ
+      สามารถส่งรูปผมปัจจุบันเพื่อปรึกษาและประเมินรายละเอียดเพิ่มเติมกับทางร้านได้
+    </p>
+
+    <a
+      class="price-contact"
+      href="https://lin.ee/NIqMuW3"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ASK VIA LINE
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- SALON -->
 
 <section
   class="salon-section"
@@ -1048,7 +1181,7 @@
 
     <img
       src="images/storefront.jpg"
-      alt="หน้าร้าน White House 45 ราชพฤกษ์"
+      alt="หน้าร้าน White House 45 ราชพฤกษ์ นนทบุรี"
       loading="lazy"
     >
 
@@ -1060,7 +1193,7 @@
 
     <img
       src="images/salon-02.jpg"
-      alt="ร้านทำผม White House 45 ราชพฤกษ์"
+      alt="ภายในร้านทำผม White House 45 ราชพฤกษ์"
       loading="lazy"
     >
 
@@ -1070,9 +1203,41 @@
 
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- OPENING HOURS -->
+
+<section>
+
+  <div class="hours-box">
+
+    <span>
+      OPENING HOURS
+    </span>
+
+    <h2>
+      Check Our Latest Hours
+    </h2>
+
+    <p>
+      เวลาเปิด–ปิดและวันหยุดของร้านอาจมีการเปลี่ยนแปลง
+      กรุณาตรวจสอบข้อมูลล่าสุดจาก Google Maps ก่อนเดินทาง
+    </p>
+
+    <a
+      class="maps-button"
+      href="https://www.google.com/maps/search/?api=1&query=White+House+45+Ratchaphruek+Nonthaburi"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      VIEW OPENING HOURS ON GOOGLE MAPS
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
 
 <section
   class="visit"
@@ -1086,16 +1251,6 @@
   <p>
     White House 45 · ราชพฤกษ์ · นนทบุรี
   </p>
-
-  <p>
-    Open 10:00 AM – 7:00 PM
-  </p>
-
-  <p>
-    Closed every Wednesday
-  </p>
-
-  <br>
 
   <p>
     Tel : 082-865-3519
@@ -1116,9 +1271,6 @@
 
   <div class="contact-buttons">
 
-
-    <!-- LINE -->
-
     <a
       class="line-button"
       href="https://lin.ee/NIqMuW3"
@@ -1128,17 +1280,9 @@
       BOOK VIA LINE
     </a>
 
-
-    <!-- CALL -->
-
-    <a
-      href="tel:0828653519"
-    >
+    <a href="tel:0828653519">
       CALL
     </a>
-
-
-    <!-- INSTAGRAM -->
 
     <a
       href="https://www.instagram.com/whitehouse45_official?stkn=MWZxb25kdjhtMDRsNA=="
@@ -1148,9 +1292,6 @@
       INSTAGRAM
     </a>
 
-
-    <!-- FACEBOOK -->
-
     <a
       href="https://www.facebook.com/share/1HcSKSc1De/?mibextid=wwXIfr"
       target="_blank"
@@ -1159,17 +1300,13 @@
       FACEBOOK
     </a>
 
-
-    <!-- GOOGLE MAPS -->
-
     <a
-      href="https://maps.app.goo.gl/9gC3p73e9uiFr8vQ7?g_st=ic"
+      href="https://www.google.com/maps/search/?api=1&query=White+House+45+Ratchaphruek+Nonthaburi"
       target="_blank"
       rel="noopener noreferrer"
     >
       GOOGLE MAPS
     </a>
-
 
   </div>
 
@@ -1177,17 +1314,17 @@
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
-  <strong>
-    WHITE HOUSE 45
-  </strong>
+  <img
+    class="footer-logo"
+    src="images/logo.jpg"
+    alt="White House 45 logo"
+  >
 
-  <br><br>
+  <br>
 
   HAIR COLOUR · HAIR DESIGN · PERSONAL COLOUR
 
