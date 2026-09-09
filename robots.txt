@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whitehouse45.github.io/Whitehouse45/sitemap.xml
